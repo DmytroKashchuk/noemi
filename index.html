@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noemi Mazzurana · Graphic Designer</title>
+  <meta name="description" content="Portfolio e CV di Noemi Mazzurana, graphic designer con formazione in design del prodotto e un forte interesse per la sostenibilità." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐱</text></svg>" />
+</head>
+<body>
+
+  <!-- Sfondo decorativo -->
+  <div class="sky" aria-hidden="true">
+    <span class="yarn yarn-1"></span>
+    <span class="yarn yarn-2"></span>
+    <span class="yarn yarn-3"></span>
+    <span class="paw-bg p1">🐾</span>
+    <span class="paw-bg p2">🐾</span>
+    <span class="paw-bg p3">🐾</span>
+    <span class="paw-bg p4">🐾</span>
+    <span class="paw-bg p5">🐾</span>
+  </div>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <a href="#top" class="nav-logo" aria-label="Torna su">
+      <svg viewBox="0 0 64 64" class="logo-cat" aria-hidden="true">
+        <path d="M10 30 L6 8 L24 18 Z" fill="currentColor"/>
+        <path d="M54 30 L58 8 L40 18 Z" fill="currentColor"/>
+        <circle cx="32" cy="36" r="24" fill="currentColor"/>
+        <circle cx="23" cy="33" r="3.5" fill="var(--bg)"/>
+        <circle cx="41" cy="33" r="3.5" fill="var(--bg)"/>
+        <path d="M29 42 L35 42 L32 46 Z" fill="var(--bg)"/>
+      </svg>
+      <span>Noemi</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#esperienze">Esperienze</a></li>
+      <li><a href="#formazione">Formazione</a></li>
+      <li><a href="#competenze">Competenze</a></li>
+      <li><a href="#progetti">Progetti</a></li>
+      <li><a href="#contatti">Contatti</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Cambia tema">
+      <span class="sun">☀️</span><span class="moon">🌙</span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <div class="hero-text">
+      <p class="hero-kicker">Miao! Sono</p>
+      <h1 class="hero-title">
+        <span class="word" data-text="Noemi">Noemi</span>
+        <span class="word" data-text="Mazzurana">Mazzurana</span>
+      </h1>
+      <p class="hero-sub">
+        <span class="typing" id="typing"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-desc">
+        Graphic designer con una formazione nel design del prodotto e un forte interesse per la
+        <strong>sostenibilità</strong>. Progetto con cura, curiosità e nove vite di creatività.
+      </p>
+      <div class="hero-cta">
+        <a href="#progetti" class="btn btn-primary">Guarda i progetti <span>🐾</span></a>
+        <a href="mailto:mazzurana.noemi@gmail.com" class="btn btn-ghost">Scrivimi</a>
+      </div>
+      <p class="hero-hint">💡 Accarezza il gatto (clicca!) e prova i tasti ↑↑↓↓←→←→</p>
+    </div>
+
+    <div class="hero-cat" id="heroCat">
+      <svg viewBox="0 0 400 420" class="big-cat" aria-label="Un gatto che ti segue con lo sguardo">
+        <defs>
+          <linearGradient id="furGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="var(--fur-1)"/>
+            <stop offset="100%" stop-color="var(--fur-2)"/>
+          </linearGradient>
+        </defs>
+        <!-- coda -->
+        <path class="tail" d="M300 330 C 380 320, 390 240, 340 220" stroke="url(#furGrad)" stroke-width="26" fill="none" stroke-linecap="round"/>
+        <!-- corpo -->
+        <ellipse cx="200" cy="330" rx="130" ry="80" fill="url(#furGrad)"/>
+        <ellipse cx="200" cy="345" rx="80" ry="50" fill="var(--belly)"/>
+        <!-- zampe -->
+        <ellipse cx="140" cy="395" rx="32" ry="18" fill="url(#furGrad)"/>
+        <ellipse cx="260" cy="395" rx="32" ry="18" fill="url(#furGrad)"/>
+        <!-- orecchie -->
+        <g class="ear ear-left">
+          <path d="M90 150 L70 40 L170 100 Z" fill="url(#furGrad)"/>
+          <path d="M100 140 L88 70 L150 105 Z" fill="var(--ear-in)"/>
+        </g>
+        <g class="ear ear-right">
+          <path d="M310 150 L330 40 L230 100 Z" fill="url(#furGrad)"/>
+          <path d="M300 140 L312 70 L250 105 Z" fill="var(--ear-in)"/>
+        </g>
+        <!-- testa -->
+        <circle cx="200" cy="180" r="120" fill="url(#furGrad)"/>
+        <!-- strisce -->
+        <path d="M200 70 L200 100" stroke="var(--stripe)" stroke-width="10" stroke-linecap="round"/>
+        <path d="M170 76 L178 104" stroke="var(--stripe)" stroke-width="10" stroke-linecap="round"/>
+        <path d="M230 76 L222 104" stroke="var(--stripe)" stroke-width="10" stroke-linecap="round"/>
+        <!-- occhi -->
+        <g class="eye eye-left">
+          <ellipse cx="155" cy="170" rx="30" ry="34" fill="#fff"/>
+          <circle class="pupil" cx="155" cy="172" r="15" fill="#2b2140"/>
+          <circle cx="160" cy="164" r="6" fill="#fff" class="shine"/>
+        </g>
+        <g class="eye eye-right">
+          <ellipse cx="245" cy="170" rx="30" ry="34" fill="#fff"/>
+          <circle class="pupil" cx="245" cy="172" r="15" fill="#2b2140"/>
+          <circle cx="250" cy="164" r="6" fill="#fff" class="shine"/>
+        </g>
+        <!-- palpebre (blink) -->
+        <ellipse class="lid" cx="155" cy="170" rx="32" ry="36" fill="url(#furGrad)"/>
+        <ellipse class="lid" cx="245" cy="170" rx="32" ry="36" fill="url(#furGrad)"/>
+        <!-- naso e bocca -->
+        <path d="M188 215 L212 215 L200 230 Z" fill="var(--nose)"/>
+        <path d="M200 230 L200 245 M200 245 Q185 258 172 245 M200 245 Q215 258 228 245" stroke="#2b2140" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <!-- baffi -->
+        <g class="whiskers" stroke="#2b2140" stroke-width="4" stroke-linecap="round">
+          <path d="M120 215 L60 205"/><path d="M120 230 L58 232"/><path d="M120 245 L64 260"/>
+          <path d="M280 215 L340 205"/><path d="M280 230 L342 232"/><path d="M280 245 L336 260"/>
+        </g>
+        <!-- guance -->
+        <circle cx="130" cy="228" r="12" fill="var(--blush)" opacity=".7"/>
+        <circle cx="270" cy="228" r="12" fill="var(--blush)" opacity=".7"/>
+      </svg>
+      <div class="speech" id="speech">Miao! 🐟</div>
+    </div>
+  </header>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Graphic Design 🐾 Sostenibilità 🐾 UX/UI 🐾 Branding 🐾 Editoria 🐾 Packaging 🐾 3D 🐾 Tipografia 🐾 Illustrazione 🐾 </span>
+      <span>Graphic Design 🐾 Sostenibilità 🐾 UX/UI 🐾 Branding 🐾 Editoria 🐾 Packaging 🐾 3D 🐾 Tipografia 🐾 Illustrazione 🐾 </span>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ESPERIENZE -->
+    <section class="section" id="esperienze">
+      <div class="section-head reveal">
+        <span class="section-emoji">🐈</span>
+        <h2>Esperienze professionali</h2>
+        <p>Ogni gatto ha le sue nove vite. Queste sono alcune delle mie.</p>
+      </div>
+
+      <ol class="timeline">
+        <li class="tl-item reveal">
+          <span class="tl-paw">🐾</span>
+          <div class="tl-card">
+            <time>Ago 2022</time>
+            <h3>Tirocinante in grafica</h3>
+            <p class="tl-org">Città e Immagine · Trentino, Italia</p>
+            <p>Collaborazione alla realizzazione di materiali di comunicazione visiva per eventi locali, enti e piccole imprese, dall'ideazione alla produzione finale, per la stampa e i canali digitali.</p>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <span class="tl-paw">🐾</span>
+          <div class="tl-card">
+            <time>Mar 2019</time>
+            <h3>Tirocinante in design del prodotto</h3>
+            <p class="tl-org">Double S · Trentino, Italia</p>
+            <p>Supporto alla modellazione 3D e allo sviluppo di ferri di cavallo su misura.</p>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <span class="tl-paw">🐾</span>
+          <div class="tl-card">
+            <time>Apr 2016</time>
+            <h3>Tirocinante in attività educative e culturali</h3>
+            <p class="tl-org">MART – Museo di arte moderna e contemporanea di Trento e Rovereto</p>
+            <p>Supporto alle attività di coinvolgimento del pubblico e alle iniziative educative, tra cui visite guidate, laboratori e attività di divulgazione culturale.</p>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <span class="tl-paw">🐾</span>
+          <div class="tl-card">
+            <time>Mar 2015</time>
+            <h3>Tirocinante in ambito amministrativo</h3>
+            <p class="tl-org">Comune di Mori · Trentino, Italia</p>
+            <p>Supporto alle attività di archiviazione e alle mansioni amministrative presso l'ufficio tecnico comunale.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- FORMAZIONE -->
+    <section class="section section-alt" id="formazione">
+      <div class="section-head reveal">
+        <span class="section-emoji">🎓</span>
+        <h2>Istruzione e formazione</h2>
+        <p>Dove ho affilato le unghie.</p>
+      </div>
+      <div class="edu-grid">
+        <article class="edu-card reveal tilt">
+          <div class="edu-icon">🎨</div>
+          <time>Ott 2020 – Nov 2023</time>
+          <h3>Laurea triennale in Graphic Design</h3>
+          <p>Trentino Art Academy – Accademia di Belle Arti<br/>Trento, Italia</p>
+        </article>
+        <article class="edu-card reveal tilt">
+          <div class="edu-icon">🛠️</div>
+          <time>Set 2015 – Giu 2020</time>
+          <h3>Diploma in design del prodotto industriale e artigianale</h3>
+          <p>C.F.P. G. Veronesi – Percorso MADE++<br/>Rovereto, Italia</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- COMPETENZE -->
+    <section class="section" id="competenze">
+      <div class="section-head reveal">
+        <span class="section-emoji">🧶</span>
+        <h2>Competenze</h2>
+        <p>I miei giochi preferiti.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3>🖌️ Grafica</h3>
+          <ul class="chips">
+            <li>Illustrator</li><li>InDesign</li><li>Photoshop</li><li>Canva</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>📱 UX / UI</h3>
+          <ul class="chips"><li>Figma</li></ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>🧊 3D & rendering</h3>
+          <ul class="chips"><li>SolidWorks</li><li>Blender</li></ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>🗂️ Produttività</h3>
+          <ul class="chips"><li>Google Workspace</li><li>Word</li><li>Excel</li><li>PowerPoint</li></ul>
+        </div>
+      </div>
+
+      <div class="langs reveal">
+        <h3>🗣️ Lingue</h3>
+        <div class="lang-row">
+          <div class="lang">
+            <div class="lang-head"><span>🇮🇹 Italiano</span><span>Madrelingua</span></div>
+            <div class="fish-bar"><span style="--w:100%">🐟</span></div>
+          </div>
+          <div class="lang">
+            <div class="lang-head"><span>🇬🇧 Inglese</span><span>B2 · Duolingo English Test 110/160 (mag 2025)</span></div>
+            <div class="fish-bar"><span style="--w:72%">🐟</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGETTI -->
+    <section class="section section-alt" id="progetti">
+      <div class="section-head reveal">
+        <span class="section-emoji">✨</span>
+        <h2>Progetti</h2>
+        <p>Esperienze in innovazione, sostenibilità e progettazione strategica.</p>
+      </div>
+
+      <div class="projects">
+        <article class="project reveal tilt project-big">
+          <div class="project-badge">📗 Editoriale</div>
+          <h3>Eco‑Enchiridio</h3>
+          <p class="project-role">Autrice e designer · Manuale sulla sostenibilità nella comunicazione visiva</p>
+          <p>Ideazione, redazione e progettazione di <em>Eco‑Enchiridio: una guida alla progettazione grafica sostenibile</em>, un manuale cartaceo sulla comunicazione visiva sostenibile. Il progetto mira a ridurre l'impatto ambientale e i costi di stampa attraverso la scelta dei materiali, impaginazioni a basso consumo d'inchiostro e formati di stampa accessibili. Una guida suddivisa in capitoli (tipografia, carta e inchiostro…), con supporti visivi e consigli pratici su impaginazione, identità visiva e immagini, basata su questionari e interviste a professionisti del settore.</p>
+          <ul class="tags"><li>comunicazione</li><li>creatività</li><li>attenzione ai dettagli</li></ul>
+        </article>
+
+        <article class="project reveal tilt">
+          <div class="project-badge">🌊 Design ambientale</div>
+          <h3>Sea Cleaner</h3>
+          <p class="project-role">Co‑progettista · Sistema per il filtraggio delle microplastiche</p>
+          <p>Concept di una boa alimentata dal vento, dotata di un meccanismo a pistone per filtrare le microplastiche presenti nell'acqua marina. Pensata per contenere i costi di produzione, semplificare la manutenzione e consentire il posizionamento in aree strategiche.</p>
+          <ul class="tags"><li>problem solving</li><li>pensiero critico</li><li>lavoro di gruppo</li></ul>
+        </article>
+
+        <article class="project reveal tilt">
+          <div class="project-badge">🏷️ Branding & packaging</div>
+          <h3>Comunicazione visiva e identità di marca</h3>
+          <p>Identità visive, loghi, segnaletica, impaginati editoriali, video promozionali e materiali stampati. Soluzioni di packaging sostenibili, tra cui etichette per vino e doggy bag riutilizzabili.</p>
+          <ul class="tags"><li>collaborazione</li><li>adattabilità</li></ul>
+        </article>
+
+        <article class="project reveal tilt">
+          <div class="project-badge">🧩 Prodotto & interazione</div>
+          <h3>Design del prodotto e dell'interazione</h3>
+          <p>Prodotti per le attività quotidiane: prese da arrampicata con LED, giocattoli interattivi, uno specchio intelligente per l'allenamento e un dispositivo per aiutare a ridurre il consumo di sigarette.</p>
+          <ul class="tags"><li>collaborazione</li><li>adattabilità</li></ul>
+        </article>
+
+        <article class="project reveal tilt">
+          <div class="project-badge">💻 Digitale & 3D</div>
+          <h3>Strumenti digitali e 3D</h3>
+          <p>Modellazione in Blender, prototipazione di elementi interattivi e realizzazione di un sito web di base. Sperimentazione con tipografia e lettering attraverso tecniche manuali e digitali.</p>
+          <ul class="tags"><li>collaborazione</li><li>adattabilità</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTATTI -->
+    <section class="section contact" id="contatti">
+      <div class="contact-box reveal">
+        <div class="contact-cat" aria-hidden="true">😻</div>
+        <h2>Parliamone davanti a una ciotola di croccantini?</h2>
+        <p>Sono a Brentonico, in Trentino, ma le mie idee viaggiano ovunque.</p>
+        <a href="mailto:mazzurana.noemi@gmail.com" class="btn btn-primary btn-big">mazzurana.noemi@gmail.com</a>
+        <p class="contact-loc">📍 Brentonico, Italia</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Noemi Mazzurana · Fatto con 🧶, 💛 e tanto pelo sul divano.</p>
+  </footer>
+
+  <!-- Gatto che sbuca scrollando -->
+  <div class="peek-cat" id="peekCat" aria-hidden="true">
+    <svg viewBox="0 0 120 80">
+      <path d="M20 60 L12 10 L48 35 Z" fill="var(--fur-1)"/>
+      <path d="M100 60 L108 10 L72 35 Z" fill="var(--fur-1)"/>
+      <circle cx="60" cy="62" r="42" fill="var(--fur-1)"/>
+      <ellipse cx="45" cy="55" rx="7" ry="9" fill="#2b2140"/>
+      <ellipse cx="75" cy="55" rx="7" ry="9" fill="#2b2140"/>
+      <circle cx="47" cy="52" r="2.5" fill="#fff"/>
+      <circle cx="77" cy="52" r="2.5" fill="#fff"/>
+      <path d="M56 68 L64 68 L60 73 Z" fill="var(--nose)"/>
+    </svg>
+  </div>
+
+  <!-- Rain container (easter egg) -->
+  <div class="rain" id="rain" aria-hidden="true"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
